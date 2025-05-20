@@ -1,0 +1,28 @@
+{
+  "name": "births-notification-certificate-app",
+  "version": "1.0.0",
+  "description": "",
+  "license": "BSD-3-Clause",
+  "private": true,
+  "scripts": {
+    "build": "d2-app-scripts build",
+    "start": "d2-app-scripts start",
+    "test": "d2-app-scripts test",
+    "deploy": "d2-app-scripts deploy"
+  },
+  "devDependencies": {
+    "@dhis2/cli-app-scripts": "^12.4.0"
+  },
+  "dependencies": {
+    "@dhis2/app-runtime": "^3.14.0",
+    "react-qr-code": "^2.0.15",
+    "react-to-print": "^3.0.5"
+  },
+  "author": "James Poijo | Kose Bilali",  
+  "institions": "MOH | HISP South Sudan",  
+  
+  "contributors": [
+    "Contributor 1 <waheedmagienology94@gmail.com>",
+    "Contributor 2 <kosebilali@gmail.com>"
+  ]
+}

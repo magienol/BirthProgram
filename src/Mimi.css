@@ -1,0 +1,211 @@
+/* General styling for the app container */
+.app-container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background-color: #f4f7fc;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for the header */
+h6 {
+  font-size: 1.5rem;
+  color: #2d3748;
+  margin-bottom: 20px; /* Reduced margin for better spacing */
+}
+
+/* Flex container for buttons to be aligned in one row */
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px; /* Limiting max-width for spacing */
+  margin-bottom: 30px; /* Space below the buttons before the data table */
+}
+
+/* Styling for the buttons in the wrapper */
+.button-wrapper button {
+  padding: 12px 24px;
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  flex-grow: 1;
+  max-width: 200px; /* Ensures buttons don’t stretch too much */
+}
+
+/* Specific button styles */
+button.org-unit-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+button.period-btn {
+  background-color: #50e3c2;
+  color: white;
+}
+
+button.generate-report-btn {
+  background-color: #f5a623;
+  color: white;
+}
+
+button:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* Styling for the data table, positioned below the buttons */
+.data-table {
+  width: 100%;
+  max-width: 900px; /* Ensuring table fits within the same max-width */
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.data-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.data-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.data-table td {
+  font-size: 14px;
+}
+
+/* Pagination style for table */
+.pagination {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.pagination button {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  margin-right: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.pagination .page-count {
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+/* Flexbox container for organization unit tree and period button */
+.org-unit-period-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 30px;
+}
+
+.org-unit-period-wrapper > * {
+  flex-grow: 1;
+  max-width: 280px; /* Restricts maximum size for individual items */
+}
+
+/* Styles for the Organization Unit Tree Modal */
+.org-unit-modal {
+  max-width: 100%;
+}
+
+/* Loader style */
+.circular-loader {
+  display: block;
+  margin: 32px auto;
+}
+
+/* Input fields or select dropdowns */
+select {
+  padding: 10px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 200px;
+  transition: border-color 0.2s ease;
+}
+
+select:focus {
+  border-color: #005fa3;
+  outline: none;
+}
+
+/* Optional: Styling for a loading state or empty selection */
+.loading,
+.no-selection {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screen sizes */
+  .button-wrapper {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .org-unit-period-wrapper {
+      flex-direction: column;
+  }
+
+  .button-wrapper button {
+      max-width: 100%;
+      margin-bottom: 16px;
+  }
+
+  .org-unit-period-wrapper > * {
+      max-width: 100%;
+      margin-bottom: 16px;
+  }
+
+  .data-table {
+      max-width: 100%;
+  }
+
+  .pagination {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .pagination button {
+      margin-top: 8px;
+  }
+}
