@@ -1,0 +1,20 @@
+/* Add to your existing CSS */
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px; /* Optional: adds space between buttons */
+  }
+  
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button.primary {
+    background-color: #4a90e2;
+    color: white;
+  }
