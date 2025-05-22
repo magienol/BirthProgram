@@ -1,0 +1,24 @@
+{
+  "appType": "APP",
+  "short_name": "birth-notification-Certificate-app",
+  "name": "Births Notification Certificate App",
+  "description": "An application for birth notifications",
+  "version": "1.0.0",
+  "launch_path": "index.html",
+  "default_locale": "en",
+  "activities": {
+    "dhis": {
+      "href": "*"
+    }
+  },
+  "icons": {
+    "48": "dhis2-app-icon.png"
+  },
+  "developer": {
+    "name": "James Poijo | Kose Bilali"
+  },
+  "manifest_generated_at": "Wed May 21 2025 20:57:35 GMT+0200 (Central Africa Time)",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

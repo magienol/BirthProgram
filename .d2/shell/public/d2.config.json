@@ -1,0 +1,13 @@
+{
+  "name": "birth-notification-Certificate-app",
+  "title": "Births Notification Certificate App",
+  "description": "An application for birth notifications",
+  "type": "app",
+  "version": "1.0.0",
+  "author": {
+    "name": "James Poijo | Kose Bilali"
+  },
+  "entryPoints": {
+    "app": "index.html"
+  }
+}
